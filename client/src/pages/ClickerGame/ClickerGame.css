@@ -1,0 +1,21 @@
+.poop{
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+
+.lunatic{
+    margin-top: 50px;
+}
+
+.no-margin-padding {
+    margin: 0px;
+    padding: 0px;
+}
+
+@media (min-width: 588px){
+    .container {
+        width: 588px;
+    }
+}

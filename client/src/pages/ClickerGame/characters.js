@@ -1,0 +1,52 @@
+const characters = [
+	{
+		"img":"/assets/img/characters/1.png",
+		"id":1
+	},
+	{
+		"img":"/assets/img/characters/2.png",
+		"id":2
+	},
+	{
+		"img":"/assets/img/characters/3.png",
+		"id":3
+	},
+	{
+		"img":"/assets/img/characters/4.png",
+		"id":4
+	},
+	{
+		"img":"/assets/img/characters/5.png",
+		"id":5
+	},
+	{
+		"img":"/assets/img/characters/6.jpg",
+		"id":6
+	},
+	{
+		"img":"/assets/img/characters/7.png",
+		"id":7
+	},
+	{
+		"img":"/assets/img/characters/10.png",
+		"id":8
+	},
+	{
+		"img":"/assets/img/characters/11.png",
+		"id":9
+	},
+	{
+		"img":"/assets/img/characters/13.png",
+		"id":10
+	},
+	{
+		"img":"/assets/img/characters/14.jpg",
+		"id":11
+	},
+	{
+		"img":"/assets/img/characters/15.jpg",
+		"id":12
+	}
+]
+
+export default characters;
