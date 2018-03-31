@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import API from "../../utils/API";
-import Navbar from "../../components/Navbar";
+// import Navbar from "../../components/Navbar";
 
 class Register extends Component {
   state = {
@@ -27,14 +27,19 @@ class Register extends Component {
     console.log(this.state);
     API.registerUser(this.state).then(res=>{
       console.log(res);
-      this.props.history.push('/login');
+      // this.props.history.push('/');
+      this.updateRegistered();
     }).catch(err => console.log(err));
   };
+
+  updateRegistered = ()=>{
+    this.props.updateRegistered();
+  }
 
   render() {
     return (
       <div>
-        <Navbar />
+
         <div className="container">
           <p className="max-center">Register</p>
           <form>

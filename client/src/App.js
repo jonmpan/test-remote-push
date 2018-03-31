@@ -5,6 +5,8 @@ import ClickerGame from "./pages/ClickerGame";
 import Register from "./pages/Register";
 import Login from "./pages/Login";
 import Logout from "./pages/Logout";
+import SocialLogin from "./pages/SocialLogin";
+import Home from "./pages/Home";
 // import Navbar from "./components/Navbar";
 // <Navbar />
 // import isLoggedIn from "./utils/isLoggedIn";
@@ -44,11 +46,8 @@ class App extends Component {
       <Router>
         <div>
           <Switch>
-            <Route exact path="/" component={ClickerGame} />
-            <Route exact path="/ClickerGame" component={ClickerGame} />
-            <Route exact path="/register" component={Register} />
-            <Route exact path="/login" component={Login} />
-            <Route exact path="/logout" component={Logout} />
+            <Route exact path="/" component={Home} />
+            <Route exact path="/sociallogin" component={SocialLogin} />
             <Route component={NoMatch} />
           </Switch>
         </div>

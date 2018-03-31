@@ -4,7 +4,7 @@ import React, { Component } from "react";
 // import { Link } from "react-router-dom";
 // import { Col, Row, Container } from "../../components/Grid";
 // import Banner from "../../components/Banner";
-import Navbar from "../../components/Navbar";
+// import Navbar from "../../components/Navbar";
 import ClickImage from "../../components/ClickImage";
 import "./ClickerGame.css";
 // import characters from "./characters.js";
@@ -32,8 +32,8 @@ class ClickerGame extends Component {
 	}
 
 	componentWillMount(){
-		console.log("componentWillMount");
-		console.log('loggedinstate '+this.state.loggedIn);
+		// console.log("componentWillMount");
+		// console.log('loggedinstate '+this.state.loggedIn);
 		// // axios.request({
   // // 			url: 'http://localhost:3001/users/profile',
   // // 			method: 'get',
@@ -47,7 +47,7 @@ class ClickerGame extends Component {
 		// else{
 		// 	this.props.history.push('/login');
 		// }
-		isLoggedIn(this.props.history,(res)=>{this.setState({loggedIn:true},()=>{console.log('loggedinstate '+this.state.loggedIn);}),console.log(res);});
+		// isLoggedIn(this.props.history,(res)=>{this.setState({loggedIn:true},()=>{console.log('loggedinstate '+this.state.loggedIn);}),console.log(res);});
 	}
 
 	shuffle = (array) => {
@@ -153,7 +153,7 @@ class ClickerGame extends Component {
 	render() {
 		return (
 			<div>
-				<Navbar loggedIn={this.state.loggedIn} />
+				
 				<div className="container">
 					<h1 className="poop">Clicker Game</h1>
 					<p className="poop">Score: {this.state.score}</p>

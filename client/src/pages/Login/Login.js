@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import API from "../../utils/API";
-import Navbar from "../../components/Navbar";
+// import Navbar from "../../components/Navbar";
 
 class Login extends Component {
   state = {
@@ -12,28 +12,33 @@ class Login extends Component {
   }
 
   handleInputChange = event => {
-    console.log('derp');
+    // console.log('derp');
     const { name, value } = event.target;
     this.setState({
       [name]: value
     });
   };
 
-  handleFormSubmit = event => {
+  handleFormSubmit = (event) => {
     event.preventDefault();
     console.log(this.state);
     API.authenticateUser(this.state).then(res=>{
       console.log(res);
       localStorage.setItem('jwt',res.data.token);
+      this.updateLoggedIn();
       // this.props.handler();
-      this.props.history.push('/');
+      // this.props.history.push('/');
     }).catch(err => console.log(err));
   };
+// this.props.updateLoggedIn
+
+  updateLoggedIn = ()=>{
+    this.props.updateLoggedIn();
+  }
 
   render() {
     return (
       <div>
-        <Navbar />
         <div className="container">
         <p className="max-center">Login</p>
         <form>
