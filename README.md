@@ -6,14 +6,20 @@ This setup allows for a Node/Express/React app which can be easily deployed to H
 
 The front-end React app will auto-reload as it's updated via webpack dev server, and the backend Express app will auto-reload independently with nodemon.
 
+## Start up your mongodb
+
+```
+Open a seperate terminal and run:
+mongod
+```
 ## Starting the app locally
 
 Start by installing front and backend dependencies. While in this directory, run the following commands:
 
 ```
-yarn install
+yarn
 cd client
-yarn install
+yarn
 cd ..
 ``
 
